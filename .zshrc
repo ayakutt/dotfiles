@@ -18,3 +18,7 @@ export EDITOR="vim"
 export VISUAL="vim"
 
 # Add any additional environment variables or custom config below...
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
