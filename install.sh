@@ -13,8 +13,12 @@ echo "Running Zsh setup..."
 echo "Running Git setup..."
 ./git_setup.sh
 
-# Run Node.js and Claude Code setup
-echo "Running Node.js and Claude Code setup..."
+# Run Node.js setup
+echo "Running Node.js setup..."
 ./node_setup.sh
+
+# Install Claude Code
+echo "Installing Claude Code..."
+curl -fsSL https://claude.ai/install.sh | bash
 
 echo "All setup complete!"
