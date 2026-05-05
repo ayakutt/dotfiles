@@ -13,6 +13,17 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias ll='ls -lAh'
 
+# AI coding CLI defaults
+export IS_SANDBOX=1
+
+claude() {
+  command claude --dangerously-skip-permissions "$@"
+}
+
+codex() {
+  command codex --dangerously-bypass-approvals-and-sandbox "$@"
+}
+
 # Set Vim as the default EDITOR
 export EDITOR="vim"
 export VISUAL="vim"

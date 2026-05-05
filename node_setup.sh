@@ -16,8 +16,11 @@ nvm install 24
 echo "Node.js version: $(node -v)"
 echo "npm version: $(npm -v)"
 
-# Install Claude Code globally
+# Install AI coding CLIs globally
 echo "Installing Claude Code..."
 npm install -g @anthropic-ai/claude-code
 
-echo "Node.js and Claude Code setup complete!"
+echo "Installing Codex CLI..."
+npm install -g @openai/codex
+
+echo "Node.js, Claude Code, and Codex CLI setup complete!"
